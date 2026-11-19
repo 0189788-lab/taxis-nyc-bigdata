@@ -1,0 +1,8 @@
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+joblib
+# IMPORTANTE: deben ser EXACTAMENTE las versiones que imprimió Colab al final de
+# notebooks/02_modelo_ml.py (un modelo de sklearn solo se carga bien con la misma versión).
+scikit-learn==1.6.1
+pandas==2.2.2
+numpy==2.0.2

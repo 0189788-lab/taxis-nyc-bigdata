@@ -1,0 +1,76 @@
+{
+  "version": "20261119-1927",
+  "tarea": "regresion",
+  "objetivos": {
+    "tarifa": "fare_amount (USD)",
+    "duracion": "duracion_min (minutos)"
+  },
+  "metrica_principal": "MAE",
+  "features": [
+    "PULocationID",
+    "DOLocationID",
+    "borough_origen_cod",
+    "borough_destino_cod",
+    "hora",
+    "dia_num",
+    "passenger_count",
+    "dist_ruta",
+    "dur_ruta",
+    "log_n_ruta"
+  ],
+  "categoricas": [
+    "borough_origen_cod",
+    "borough_destino_cod"
+  ],
+  "boroughs": [
+    "Bronx",
+    "Brooklyn",
+    "EWR",
+    "Manhattan",
+    "Queens",
+    "Staten Island"
+  ],
+  "dia_num": "1=domingo, 2=lunes, ..., 7=sabado (convención de Spark dayofweek)",
+  "entrenamiento": {
+    "periodo": "2026-06 a 2026-07",
+    "filas_muestra": 1500636,
+    "filas_disponibles": 5111218
+  },
+  "prueba": {
+    "periodo": "2026-08",
+    "filas_muestra": 400203,
+    "filas_disponibles": 2289279
+  },
+  "metricas_test": {
+    "tarifa": {
+      "modelo": {
+        "MAE": 2.979,
+        "RMSE": 4.957,
+        "R2": 0.9104
+      },
+      "baseline_mediana_ruta": {
+        "MAE": 3.237,
+        "RMSE": 6.363,
+        "R2": 0.8523
+      },
+      "iteraciones": 400
+    },
+    "duracion": {
+      "modelo": {
+        "MAE": 3.771,
+        "RMSE": 5.561,
+        "R2": 0.7998
+      },
+      "baseline_mediana_ruta": {
+        "MAE": 4.281,
+        "RMSE": 6.632,
+        "R2": 0.7152
+      },
+      "iteraciones": 400
+    }
+  },
+  "sklearn_version": "1.6.1",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.4.6",
+  "python_version": "3.13.18"
+}
