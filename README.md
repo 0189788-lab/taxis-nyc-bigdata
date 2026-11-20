@@ -97,6 +97,11 @@ Tablas Gold: viajes por hora · ingresos por zona · propinas por día (solo tar
 | Tarifa (USD) | `[ 2.98]` | `[3.24 ]` | `[4.96 ]` | `[ 0.910]` |
 | Duración (min) | `[3.77 ]` | `[4.28 ]` | `[5.56 ]` | `[0.800 ]` |
 
+El modelo supera al baseline (mediana histórica de la ruta) en todas las métricas: reduce el MAE
+8 % en tarifa y 12 % en duración, y el RMSE 22 % y 16 %, es decir, corrige sobre todo los errores
+grandes. En promedio se equivoca por ±$2.98 en la tarifa y ±3.8 min en la duración al predecir
+agosto, un mes que el modelo no vio en el entrenamiento.
+
 ## 3. Publicación del modelo (API)
 
 API REST con **FastAPI**, empaquetada en **Docker** y desplegada en **Render**. Documentación automática **OpenAPI/Swagger** en `/docs` (y ReDoc en `/redoc`).
