@@ -28,6 +28,7 @@ flowchart LR
 
 ```
 ├── notebooks/
+│   ├── taxis_nyc_colab.ipynb    # notebook completo ejecutado en Colab (con salidas)
 │   ├── 01_etl_medallion.py      # Bronze, Silver, Gold (Colab + PySpark)
 │   └── 02_modelo_ml.py          # features, entrenamiento, evaluación, exportación
 ├── api/                         # Publicación del modelo (punto 3)
