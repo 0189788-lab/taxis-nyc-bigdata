@@ -4,12 +4,11 @@ Proyecto final de Big Data. Procesamos **más de 10 millones de viajes** de taxi
 
 | | Enlace |
 |---|---|
-| 🌐 App web | `https://TU-APP.streamlit.app` |
-| 🔌 API (Swagger) | `https://TU-API.onrender.com/docs` |
+| 🌐 App web | https://taxis-nyc-bigdata-rgpuzgf2jzjqnppedhjfef.streamlit.app/ |
+| 🔌 API (Swagger) | https://taxis-nyc-api-bs4j.onrender.com/docs |
 
-> Equipo: Nombre 1 · Nombre 2
-
----
+> Equipo: Monica Isabel Gutierrez Aceves & Laura Berenice Gutierrez Aceves
+> ---
 
 ## Arquitectura
 
