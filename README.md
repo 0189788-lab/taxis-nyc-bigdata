@@ -90,12 +90,12 @@ Tablas Gold: viajes por hora · ingresos por zona · propinas por día (solo tar
 
 **Modelo:** `HistGradientBoostingRegressor` (scikit-learn), uno por objetivo, con early stopping. Se entrena con una muestra aleatoria de 1.5 M viajes (el ETL y las features de ruta usan el 100 % de los datos en Spark).
 
-**Resultados en agosto 2026 (test)** — copiar de `api/modelo/metadata.json`
+**Resultados en agosto 2026 (test)** — copiados de `api/modelo/metadata.json`
 
 | Objetivo | Modelo MAE | Baseline MAE | Modelo RMSE | Modelo R² |
 |---|---|---|---|---|
-| Tarifa (USD) | `[ ]` | `[ ]` | `[ ]` | `[ ]` |
-| Duración (min) | `[ ]` | `[ ]` | `[ ]` | `[ ]` |
+| Tarifa (USD) | `[ 2.98]` | `[3.24 ]` | `[4.96 ]` | `[ 0.910]` |
+| Duración (min) | `[3.77 ]` | `[4.28 ]` | `[5.56 ]` | `[0.800 ]` |
 
 ## 3. Publicación del modelo (API)
 
