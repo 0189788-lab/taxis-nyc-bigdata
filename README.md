@@ -52,8 +52,8 @@ flowchart LR
 
 | Capa | Contenido | Registros |
 |---|---|---|
-| Bronze | Los 3 parquet unidos, sin cambios | `[10704073]` |
-| Silver | Viajes válidos + columnas derivadas + nombres de zonas | `[7492005]` |
+| Bronze | Los 3 parquet unidos, sin cambios | `[10,704,073]` |
+| Silver | Viajes válidos + columnas derivadas + nombres de zonas | `[7,492,005]` |
 | Gold | 6 tablas agregadas para el dashboard | — |
 
 Reglas de limpieza en Silver y su justificación:
