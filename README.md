@@ -24,8 +24,8 @@ flowchart LR
     D --> I[App Streamlit<br/>Dashboard]
 ```
 **Colab** (entrena el modelo) → **GitHub** (código + modelo) → **Render** (construye el Docker y lo publica)
-                                                            ↑
-                                  **  App Streamlit **(consulta la URL)
+                                                                   ↑
+                                                            **App Streamlit** (consulta la URL)
 
                                     
 La API está hecha con FastAPI, empaquetada en un contenedor Docker y desplegada en Render, que la construye directamente desde nuestro repositorio de GitHub
