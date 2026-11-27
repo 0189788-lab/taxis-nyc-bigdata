@@ -37,7 +37,7 @@ La API está hecha con FastAPI, empaquetada en un contenedor Docker y desplegada
 │   ├── taxis_nyc_colab.ipynb    # notebook completo ejecutado en Colab (con salidas)
 │   ├── 01_etl_medallion.py      # Bronze, Silver, Gold (Colab + PySpark)
 │   └── 02_modelo_ml.py          # features, entrenamiento, evaluación, exportación
-├── api/                         # Publicación del modelo (punto 3)
+├── api/                         # Publicación del modelo
 │   ├── main.py                  # endpoints FastAPI
 │   ├── schemas.py               # validación de entradas (Pydantic)
 │   ├── predictor.py             # carga del modelo y construcción de features
@@ -46,7 +46,7 @@ La API está hecha con FastAPI, empaquetada en un contenedor Docker y desplegada
 │   ├── requirements.txt
 │   ├── scripts/crear_modelo_demo.py
 │   └── tests/test_api.py
-└── app/                         # Aplicación de consulta (punto 4)
+└── app/                         # Aplicación de consulta
     ├── streamlit_app.py         # cotizador + dashboard
     ├── cliente_api.py           # cliente HTTP: timeouts, reintentos, errores
     ├── data/                    # CSV de la capa Gold
